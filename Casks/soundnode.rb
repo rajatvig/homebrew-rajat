@@ -1,12 +1,12 @@
 cask 'soundnode' do
-  version :latest
-  sha256 :no_check
+  version "7.0.0"
+  sha256 "bada00a3977dace63137e6854465cba213feab5a08bd628d9fa2710f68f01693"
 
-  url 'http://www.soundnodeapp.com/downloads/mac/Soundnode.zip'
+  url "https://github.com/Soundnode/soundnode-app/releases/download/#{version}/Soundnode-darwin-x64.tar.xz"
   name 'Soundnode'
   homepage 'http://www.soundnodeapp.com/'
 
-  app 'Soundnode.app'
+  app 'Soundnode-darwin-x64/Soundnode.app'
 
   zap trash: [
                '~/Library/Application Support/Soundnode',
